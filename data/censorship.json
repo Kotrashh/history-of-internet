@@ -1,0 +1,61 @@
+{
+    "incidents": [
+        {
+            "id": 1,
+            "year": 2007,
+            "title": "YouTube banned (First Time)",
+            "description": "YouTube was blocked in Turkey after videos deemed insulting to Mustafa Kemal Atatürk was posted. This was one of the major platform bans and sparked public debate about censorship.",
+            "duration": "Banned for approximately 2.5 years",
+            "icon": "📹"
+        },
+        {
+            "id": 2,
+            "year": 2010,
+            "title": "YouTube Ban Lifted",
+            "description": "After the offending videos were removed, Turkey lifted it's ban on YouTube in October 2010. Access was restored following a court ruling.",
+            "duration": "Resolved after 2.5 years",
+            "icon": "✅"
+        },
+        {
+            "id": 3,
+            "year": 2014,
+            "title": "Twitter and YouTube Banned",
+            "description": "In March 2014, just before local elections, both Twitter and YouTube were banned by goverment order. Citizens widely used VPNs and DNS workarounds to bypass the ban. Courts later overturned both bans.",
+            "duration": "Twitter banned ~2 weeks; YouTube ~2 months",
+            "icon": "🐦"
+        },
+        {
+            "id": 4,
+            "year": 2017,
+            "title": "Wikipedia Blocked",
+            "description": "In April 2017, Turkey blocked Access to all Wikipedia language editions under Law 5651, citing articles that allegedly portrayed Turkey as supporting terrorist organisations.",
+            "duration": "Blocked for nearly 3 years",
+            "icon": "📚"
+        },
+        {
+            "id": 5,
+            "year": 2020,
+            "title": "Wikipedia Unblocked",
+            "description": "Turkey's Constitutional Court ruled that the Wikipedia block violated freedom of expression. Access was restored in January 2020 after nearly three years of being blocked.",
+            "duration": "Unblocked January 2020",
+            "icon": "🔓"
+        },
+        {
+            "id": 6,
+            "year": 2020,
+            "title": "Social Media Law Introduced",
+            "description": "In July 2020, Turkey passed a law requiring social media platforms with over 1 million Daily users to appoint local representives and store Turkish user data in Turkey. Facebook, Instagram, YouTube, Twitter and Periscope were all fined for initial non-compliance.",
+            "duration": "Ongoing regulation",
+            "icon": "🏛️"
+        },
+        {
+            "id": 7,
+            "year": 2022,
+            "title": "Over 500,000 Sites Blocked",
+            "description": "By 2023, Turkey had blocked Access to more than 500,000 websites under Law 5651. VPN usage in Turkey remains among the highest in Europe as citizens seek unrestricted Access.",
+            "duration": "Ongoing",
+            "icon": "🚫"
+        }
+        
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "milestones": [
+        {
+            "id": 1,
+            "year": 2009,
+            "title": "3G Networks Launch",
+            "description": "Turkcell, Vodafone and Avea launched 3G mobile internet services in Turkey, enabling smartphones to Access the internet on the go for the first time.",
+            "category": "infrastructure",
+            "icon": "📱"
+        },
+        {
+            "id": 2,
+            "year": 2010,
+            "title": "Turkey's Startup Scene Emerges",
+            "description": "Turkey was described as an emerging startup market by TechCrunch and ranked as the third largest country on Facebook. Istanbul began establishing itself as a tech hub.",
+            "category": "commercial",
+            "icon": "🚀"
+        },
+        {
+            "id": 3,
+            "year": 2013,
+            "title": "Smartphone Adoption Surges",
+            "description": "Smartphone penetration in Turkey surpassed 30% and continued to climb rapidly. Mobile internet usage overtook desktop for social media platforms.",
+            "category": "infrastructure",
+            "icon": "📲"
+        },
+        {
+            "id": 4,
+            "year": 2016,
+            "title": "4.5G Revolution",
+            "description": "Turkey launched '4.5G' (LTE-Advanced) services in April 2016. Turkcell, Vodafone and TT Mobile all began offering high-speed mobile broadband. 4.5G subscribers quickly reached 45.7 million.",
+            "category": "social",
+            "icon": "⚡"
+        },
+        {
+            "id": 5,
+            "year": 2019,
+            "title": "Fiber Expansion Nationwide",
+            "description": "TTNET aggressively expanded fiber-optic infrasturcture across Turkey, with major investment in suburban and rural areas. Fiber became available in most urban centres.",
+            "category": "commercial",
+            "icon": "🌐"
+        },
+        {
+            "id": 6,
+            "year": 2022,
+            "title": "5G Preparations Begin",
+            "description": "Turkey began specturum auction and infrastructure preparations for 5G networks. Turkey ranked 15th globally with over 68 million internet users.",
+            "category": "policy",
+            "icon": "🛰️"
+        }
+    ]
+}

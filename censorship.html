@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Internet freedom and censorship in Turkey — YouTube bans, Wikipedia blocks, and social media laws.">
+    <title>Freedom & Censorship</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo"><span>Turkey</span>Net</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="early-int.html">Early Internet</a></li>
+            <li><a href="mobile-era.html">Mobile Era</a></li>
+            <li><a href="censorship.html" class="active">Censorship</a></li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-inner">
+            <span class="hero-tag">Chapter 3</span>
+            <h1>Freedom & Censorship</h1>
+            <p>From a free and open internet in the 1990s, to bans on YouTube, Twitter, and Wikipedia.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-block">
+            <p>
+                Until 2007, Turkey's internet was largely unrestricted. Then Law No. 5651 changed everything. Growing up in Turkey, I experienced these bans personally — I remember using VPNs as a teenager to access YouTube, and watching the Twitter ban announced just before local elections in 2014. By 2023, over 500,000 websites had been blocked under this law.
+            </p>
+        </div>
+        <div class="section-block">
+            <h2>Key Incidents</h2>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                Data loaded from <code>data/censorship.json</code> using a custom template engine.
+            </p>
+            <div id="incidents-container">
+                <p class="loading">Loading...</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>🔒 VPN Use in Turkey</h3>
+            <p>
+                Due to repeated platform bans, Turkey consistently ranks among the highest VPN-using countries in Europe. When Twitter was banned in 2014, citizens wrote the Google DNS address 8.8.8.8 on walls around Istanbul to share the bypass with others.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>CM1040 Web Development Coursework — University of London</p>
+        <p>Sources: Freedom House, Wikipedia, Reuters, Human Rights Watch</p>
+    </footer>
+
+    <script type="text/template" id="incidents-template">
+        {{#each incidents}}
+        <div class="card">
+            <span class="year-badge">{{year}}</span>
+            <h3>{{icon}} {{title}}</h3>
+            <p>{{description}}</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted);">
+              ⏱ {{duration}}
+            </p>
+        </div>
+        {{/each}}
+    </script>
+    
+    <script src="js/template-engine.js"></script>
+    <script src="js/validators.js"></script>
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        toggle.addEventListener('click',function(){
+            const isOpen = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        TemplateEngine.fetchAndRender(
+            'data/censorship.json',
+            'incidents-template',
+            'incidents-container',
+            'incidents',
+            Validators.validateCensorship
+        );
+    </script>
+</body>
+
+</html>

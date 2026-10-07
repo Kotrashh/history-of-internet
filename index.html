@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="description" content="The history of the internet in Turkey during my lifetime (2001–present). Explore how Turkey went from dial-up to 4.5G.">
+    <title>History of the Internet in Turkey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-logo"><span>Turkey</span>Net</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="early-int.html">Early Internet</a></li>
+            <li><a href="mobile-era.html">Mobile Era</a></li>
+            <li><a href="censorship.html">Censorship</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class=hero-inner>
+            <span class="hero-tag">CM1040 Web Development</span>
+            <h1>The Internet in Turkey<br>During My Lifetime</h1>
+            <p>Born in 2001 - the same year ADSL broadband arrived in Turkey. This site documents that journey from dial-up to 4.5G.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-block">
+            <h2>Turkey Online: Key Facts</h2>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-number">68M+</span>
+                    <p class="stat-label">Internet users (2022)</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">80%</span>
+                    <p class="stat-label">Daily usage rate (2021)</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1993</span>
+                    <p class="stat-label">First internet connection</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">500K+</span>
+                    <p class="stat-label">Websites blocked</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <h2>About This Project</h2>
+            <p style="margin-top: 0.75rem;">
+                I was born in Turkey in 2001, the same year ADSL broadband was first introduced by TTNET. Growing up, I witnessed the country's internet landscape transform dramatically - from expensive dial-up connections and internet cafes, to high-speed 4.5G mobile internet in everyone's pocket, and the complex political story of social media bans and censorship laws. This website explores those three chapters of Turkey's internet history.
+            </p>
+        </div>
+
+        <div class="section-block">
+            <h2>Explore the History</h2>
+            <br>
+            <a href="early-int.html">
+                <div class="card">
+                    <span class="year-badge">Chapter 1</span>
+                    <h3>The Early Internet (1993-2008)</h3>
+                    <p>From Turkey's first connection at METU to ADSL broadband and the internet cafe boom.</p>
+                </div>
+            </a>
+            <a href="mobile-era.html">
+                <div class="card">
+                    <span class="year-badge">Chapter 2</span>
+                    <h3>The Mobile Era (2009-present)</h3>
+                    <p>3G, 4.5G, smartphones and the startup scene. How mobile internet transformed daily life in Turkey.</p>
+                </div>
+            </a>
+            <a href="censorship.html">
+                <div class="card">
+                    <span class="year-badge">Chapter 3</span>
+                    <h3>Freedom & Censorship</h3>
+                    <p>YouTube bans, Wikipedia blocks, social media laws. Turkey's complicated internet freedom story.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3>📌 How This Site Works</h3>
+            <p>
+                Content on each page is loaded dynamically from JSON data files using a custom JavaScript template engine built from scratch — no external libraries used. JSON data is validated before rendering. The site is fully responsive for desktop and mobile.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>CM1040 Web Development Coursework — University of London</p>
+        <p>Sources: Wikipedia, Freedom House, Statista, Reuters</p>
+    </footer>
+
+
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        toggle.addEventListener('click',function(){
+            const isOpen = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The early history of the internet in Turkey from 1993 to 2008.">
+    <title>Early Internet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo"><span>Turkey</span>Net</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="early-int.html" class="active">Early Internet</a></li>
+            <li><a href="mobile-era.html">Mobile Era</a></li>
+            <li><a href="censorship.html">Censorship</a></li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-inner">
+            <span class="hero-tag">Chapter 1</span>
+            <h1>The Early Internet in Turkey</h1>
+            <p>From Turkey's first connection in 1993 to ADSL broadband in 2001 - the year I was born.</p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="section-block">
+            <p>
+                Turkey's internet journey began in academic institutions long before it reached homes and businesses. The period from 1993 to 2008 laid the technical and commercial foundations for everything that followed. METU (Middle East Technical University) in Ankara played a crucial role - their 64 kbps connection to the NSFNet on 12 April 1993 marked Turkey's entry into the global internet.
+            </p>
+        </div>
+
+        <div class="section-block">
+            <h2>Timeline of Key Events</h2>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+                Data loaded from <code>data/timeline.json</code> using a custom template engine.
+            </p>
+            <div id="timeline-container">
+                <p class="loading">Loading...</p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>🏛️ The Role of METU</h3>
+            <p>
+                Middle East Technical University established Turkey's first internet connection in 1993. For years, universities remained the primary access points before commercial ISPs emerged and eventually TTNET launched ADSL broadband in 2001.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>CM1040 Web Development Coursework — University of London</p>
+        <p>Sources: Wikipedia — Internet in Turkey, Freedom House</p>
+    </footer>
+
+    <script type="text/template" id="timeline-template">
+        {{#each events}}
+        <div class="card">
+            <span class="year-badge">{{year}}</span>
+            <h3>{{icon}} {{title}}</h3>
+            <p>{{description}}</p>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="js/template-engine.js"></script>
+    <script src="js/validators.js"></script>
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        toggle.addEventListener('click',function() {
+            const isOpen = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        TemplateEngine.fetchAndRender(
+            'data/timeline.json',
+            'timeline-template',
+            'timeline-container',
+            'events',
+            Validators.validateTimeline
+        );
+
+
+    </script>
+</body>
+
+</html>
+
+

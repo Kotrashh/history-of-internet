@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Links */
+a {
+  color: #C8102E;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #1a1a2e;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: relative;
+}
+
+.nav-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-logo span {
+  color: #C8102E;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links a {
+  color: #ccc;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  background-color: #C8102E;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Hamburger Menu Button */
+.nav-toggle {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-tag {
+  background: #C8102E;
+  padding: 5px 12px;
+  font-size: 11px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero h1 {
+  margin: 15px 0;
+  font-size: 32px;
+}
+
+.hero p {
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content Area */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #1a1a2e;
+  border-bottom: 3px solid #C8102E;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.section-block {
+  margin-bottom: 40px;
+}
+
+/* Cards Section */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #C8102E;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.year-badge {
+  background: #C8102E;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+/* Stats Row for Index Page */
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 26px;
+  font-weight: bold;
+  color: #C8102E;
+  display: block;
+}
+
+/* Information Box */
+.info-box {
+  background: #1a1a2e;
+  color: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.info-box h3 {
+  color: #f0c040;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #1a1a2e;
+  color: #888;
+  text-align: center;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+
+
+
+
+
+/* --- Responsive Design --- */
+
+
+
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #333;
+    z-index: 100;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex; /* Show hamburger icon */
+  }
+
+  .stats-row {
+    flex-direction: column;
+  }
+}

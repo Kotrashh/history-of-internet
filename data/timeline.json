@@ -1,0 +1,46 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "year": 1993,
+            "title": "Turkey's First Internet Connection",
+            "description": "Turkey connected to the internet on 12 April 1993, via a 64kbps line from METU (Middle East Technical University) in Ankara to the NSFNet backbone in the USA.",
+            "icon": "🔌"
+        },
+        {
+            "id": 2,
+            "year": 1996,
+            "title": "First Commercial ISP's Launch",
+            "description": "Commercial internet service providers began operating in Turkey, making the internet accesible beyond universities. Turnet and Superonline were among the first commercial ISP's.",
+            "icon": "🏢"
+        },
+        {
+            "id": 3,
+            "year": 2001,
+            "title": "ADSL Broadband Arrives",
+            "description": "TTNET (subsidiary of Türk Telekom) launched ADSL broadband services across Turkey, replacing slow dial-up connections and marking the beginning of the modern internet era.",
+            "icon": "📡"
+        },
+        {
+            "id": 4,
+            "year": 2003,
+            "title": "Internet Cafes Boom",
+            "description": "Internet cafes exploded in popilarity across Turkish cities and towns, becoming social hubs especially for young people to Access email, chat and online games.",
+            "icon": "☕"
+        },
+        {
+            "id": 5,
+            "year": 2005,
+            "title": "Türk Telekom Privatised",
+            "description": "The Turkish goverment privatised Türk Telekom, selling a 55% stake for $6.55 billion. Despite privatisation, the company retained dominance over Turkey's broadband infrastructure.",
+            "icon": "💰"
+        },
+        {
+            "id": 6,
+            "year": 2007,
+            "title": "Turkey's First Internet Connection",
+            "description": "Turkey's first internet-specific legislation established a legal framework for banning websites deemed to violate specific laws. This marked the beginning of systematic content regulation.",
+            "icon": "⚖️"
+        }        
+    ]
+}
