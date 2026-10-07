@@ -4,6 +4,8 @@ CM1040 Web Development Coursework — University of London
 
 A website about the history of the internet in Turkey during my lifetime (2001–present).
 
+🔗 **Live Site:** https://kotrashh.github.io/history-of-internet/
+
 ## Pages
 
 - **Home** — Overview and key facts
@@ -17,19 +19,19 @@ Content on each page is loaded dynamically from JSON data files using a custom J
 
 ## File Structure
 
-Project/
-├── index.html
-├── early-int.html
-├── mobile-era.html
-├── censorship.html
-├── css/style.css
-├── js/
-│ ├── template-engine.js
-│ └── validators.js
-└── data/
-├── timeline.json
-├── mobile.json
-└── censorship.json
+    Project/
+    ├── index.html
+    ├── early-int.html
+    ├── mobile-era.html
+    ├── censorship.html
+    ├── css/style.css
+    ├── js/
+    │   ├── template-engine.js
+    │   └── validators.js
+    └── data/
+        ├── timeline.json
+        ├── mobile.json
+        └── censorship.json
 
 
 ## Running Locally
